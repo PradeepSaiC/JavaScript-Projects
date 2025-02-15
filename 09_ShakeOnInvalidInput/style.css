@@ -1,0 +1,65 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #ccc;
+}
+
+form{
+    width: 40vw;
+    background-color: #fff;
+    padding: 40px;
+}
+form > * {
+    display: block;
+    width: 100%;
+}
+.error-container{
+    height: 40px;
+}
+#error-message{
+    visibility: hidden;
+    color: red;
+}
+.input-text{
+    padding: 10px;
+    font-size: 24px;
+    outline: none;
+}
+button{
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.shake{
+    animation : shake 3s ease-in-out;
+}
+@keyframes shake {
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(-20px);
+    }
+    50%{
+        transform: translateX(20px);
+    }
+    75%{
+        transform: translateX(-20px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
